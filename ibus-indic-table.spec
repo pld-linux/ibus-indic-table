@@ -1,7 +1,7 @@
 Summary:	The Table engine for IBus platform
 Name:		ibus-indic-table
 Version:	1.3.1
-Release:	0.1
+Release:	1
 License:	LGPL v2+
 Group:		Libraries
 Source0:	http://fedorapeople.org/~nkumar/ibus-indic-table/ibus-indic-table-1.3.1/%{name}-%{version}.tar.gz
