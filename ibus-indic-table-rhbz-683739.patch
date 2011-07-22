@@ -1,0 +1,16 @@
+diff -uNr ibus-indic-table-1.3.1/engine/tabcreatedb.py ibus-indic-table-1.3.1modified/engine/tabcreatedb.py
+--- ibus-indic-table-1.3.1/engine/tabcreatedb.py	2011-03-08 16:13:25.000000000 +0530
++++ ibus-indic-table-1.3.1modified/engine/tabcreatedb.py	2011-03-14 16:43:42.966279000 +0530
+@@ -172,7 +172,11 @@
+     def attribute_parser (f):
+         for l in f:
+             try:
+-                attr,val = unicode (l,"utf-8").strip().split ('=')
++                if len(unicode (l,"utf-8").strip().split ('='))==3:
++                    attr, val, dum = unicode (l,"utf-8").strip().split ('=')
++                    val=''.join([val,"=",dum])
++                else:
++                    attr,val = unicode (l,"utf-8").strip().split ('=')
+             except:
+                 attr,val = unicode (l,"utf-8").strip().split ('==')
+             attr = attr.strip()
