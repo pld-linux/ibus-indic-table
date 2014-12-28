@@ -10,7 +10,7 @@ Source0:	http://fedorapeople.org/~nkumar/ibus-indic-table/%{name}-%{version}/%{n
 Patch0:		%{name}-rhbz-683739.patch
 Patch1:		%{name}-rhbz-703124.patch
 URL:		http://code.google.com/p/ibus/
-BuildRequires:	gettext-devel >= 0.16.1
+BuildRequires:	gettext-tools >= 0.16.1
 BuildRequires:	ibus-devel >= 1.1.0
 BuildRequires:	pkgconfig
 BuildRequires:	python >= 1:2.5
