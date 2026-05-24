@@ -2,7 +2,7 @@ Summary:	The Indic Table engine for IBus platform
 Summary(pl.UTF-8):	Silnik Indic Table dla platformy IBus
 Name:		ibus-indic-table
 Version:	1.3.1
-Release:	1
+Release:	2
 License:	LGPL v2+
 Group:		Libraries
 Source0:	http://fedorapeople.org/~nkumar/ibus-indic-table/%{name}-%{version}/%{name}-%{version}.tar.gz
